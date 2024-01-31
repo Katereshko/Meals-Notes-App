@@ -107,6 +107,10 @@ h1, input{
 
 @media all and (max-width: 820px){
 
+  body{
+    height: 100vh;
+  }
+
   textarea, .myInput{
     width: 90%;
   }
