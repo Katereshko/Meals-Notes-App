@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+body{
+  background: url("food.jpeg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #dcedf7;
+  border-radius: 20px;
+  padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-add, .button-delete{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button-add{
+  background-color: #77cf40;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 17px;
+}
+
+.button-delete{
+  background: none;
+  border: none;
+  color: red;
+}
+
+.whole-plan{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  width: 70%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.myInput, textarea{
+  font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.myInput{
+  width: 70%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin-top: 30px;
+}
+
+textarea{
+  display: block;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  padding: 10px;
+  width: 70%;
+  height: 200px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.selected{
+  background-color: #fad106;
+}
+
+.default{
+  background-color: #dcedf7;
+}
+
+p{
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.field{
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.list_container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.container{
+  width: 100%;
+}
+
+h1, input{
+  margin-top: 30px;
+}
+
+.meal{
+  width: 100%;
+}
+
+@media all and (max-width: 820px){
+
+  textarea, .myInput{
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+    font-size: 20px;
   }
+
+  body{
+    background: url("food-mobile.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media all and (max-width: 520px){
+
+  .App{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
